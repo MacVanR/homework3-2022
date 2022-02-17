@@ -98,6 +98,7 @@ a.skip{
 
 nav a:focus{
   border-top: solid 2px yellow;
+  text-decoration: none;
 }
 .container{
   display: grid;
@@ -196,6 +197,7 @@ img{
   nav{
     padding-top: 35px;
     /*Requirement 11*/
+    text-align: right;
 
   }
 
@@ -206,6 +208,43 @@ img{
 
   
   /* Requirements 12-15 here: */
+  a.skip:focus{
+    text-align: left;
+    position: absolute;
+    top: -20px;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: repeat(4, 300px);
+
+  }
+
+  .about{
+    grid-column: 3/ span2;
+  }
+  .about-image{
+    grid-column: 2/ span2;
+  }
+  .clients{
+    grid-column: 2 /span 2;
+  }
+  .clients-image{
+    grid-column: 3/ span 2;
+  }
+  .contact{
+    grid-column: 3/ span2;
+  }
+  .contact-image{
+    grid-column: 3/ span 2;
+  }
+  .method{
+    grid-column: 3/ span 2;
+  }
+  .metod-image{
+    grid-column:2/ span 2;
+  }
 
 }
 
